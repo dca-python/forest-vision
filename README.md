@@ -2,7 +2,11 @@
 
 ForestVision is a web-based tool designed to analyze deforestation over a specified period using satellite imagery. This application allows users to select geographic coordinates and a time frame to visualize changes in forest cover and quantify the extent of deforestation.
 
+ForestVision was created by a team of four as the final project of Le Wagon's Data Science & AI Bootcamp. 
+This repo is a slightly restructured copy of the two repositories we used to separately develop the [frontend](https://github.com/vikfalk/deforestation_frontend) and [backend](https://github.com/vikfalk/deforestation_backend) of the web app – merged together for display purposes.
+
 ![Mock-up_1x](https://github.com/vikfalk/deforestation_frontend/assets/165885171/483ef44f-ded0-4660-90da-8ed36125fd69)
+
 ## Features
 
 - **Geographic Selection**: Select any location globally using latitude and longitude inputs.
@@ -13,54 +17,17 @@ ForestVision is a web-based tool designed to analyze deforestation over a specif
 
 ## Try ForestVision Online
 
-You can try ForestVision without installing anything by visiting our web app at [ForestVision Web App](https://vikfalk-deforestation-frontend-forestvision-s58t4z.streamlit.app/). Explore deforestation trends and visualize forest cover changes directly in your browser 🌳
-
-## Run Locally
-
-### Installation
-
-To run ForestVision locally, follow these steps:
-
-1. **Clone the repository**:
-    ```sh
-    git clone https://github.com/vikfalk/forestvision.git
-    cd forestvision
-    ```
-
-2. **Create a virtual environment and activate it**:
-    ```sh
-    python -m venv env
-    source env/bin/activate  # On Windows use `env\Scripts\activate`
-    ```
-
-3. **Install the required dependencies**:
-    ```sh
-    pip install -r requirements.txt
-    ```
-
-4. **Run the Streamlit application**:
-    ```sh
-    streamlit run ForestVision.py
-    ```
+You can try ForestVision without installing anything by visiting our web app at [ForestVision Web App](https://forest-vision-sjdauzt4idxdndzoewe56t.streamlit.app/). Explore deforestation trends and visualize forest cover changes directly in your browser 🌳
 
 ### Usage
 
-1. **Open the Application**: After running the Streamlit command, a web browser should open with the ForestVision interface. If not, navigate to `http://localhost:8501` in your browser.
-
-2. **Select Location and Time Frame**:
+1. **Select Location and Time Frame**:
     - **Coordinates**: Input the latitude and longitude for the area of interest.
     - **Time Frame**: Choose the start and end dates for the analysis.
 
-3. **View and Analyze Results**:
+2. **View and Analyze Results**:
     - **View on Map**: Click the "View on map" button to display the selected area on the map.
     - **Calculate**: Click the "Calculate" button to start the image retrieval and processing. The results will include satellite images, forest overlays, and deforestation metrics.
-
-## Project Structure
-
-- **`ForestVision.py`**: Main application file containing the Streamlit interface and core logic.
-- **`requirements.txt`**: List of Python dependencies required for the project.
-- **`smooth_and_vectorize.py`**: Utility script for image processing (if applicable).
-- **`example_images/`**: Directory containing example images used in the app.
 
 ## Acknowledgements
 
